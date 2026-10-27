@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "artDirection": "扁平、圓潤的 2D 插畫；MVP 使用 Kenney 素材，星空效果以 Phaser 圖形補足。",
+  "packs": [
+    {
+      "slug": "background-elements-remastered",
+      "name": "Background Elements Remastered",
+      "sourcePage": "https://kenney.nl/assets/background-elements-remastered",
+      "license": "CC0-1.0",
+      "manifest": "/assets/packs/kenney/background-elements-remastered/pack-manifest.json"
+    },
+    {
+      "slug": "planets",
+      "name": "Planets",
+      "sourcePage": "https://kenney.nl/assets/planets",
+      "license": "CC0-1.0",
+      "manifest": "/assets/packs/kenney/planets/pack-manifest.json"
+    },
+    {
+      "slug": "ui-pack-adventure",
+      "name": "UI Pack - Adventure",
+      "sourcePage": "https://kenney.nl/assets/ui-pack-adventure",
+      "license": "CC0-1.0",
+      "manifest": "/assets/packs/kenney/ui-pack-adventure/pack-manifest.json"
+    },
+    {
+      "slug": "generic-items",
+      "name": "Generic Items",
+      "sourcePage": "https://kenney.nl/assets/generic-items",
+      "license": "CC0-1.0",
+      "manifest": "/assets/packs/kenney/generic-items/pack-manifest.json"
+    }
+  ],
+  "scenes": {
+    "treehouse": {
+      "label": "星空小樹屋",
+      "assets": [
+        "/assets/packs/kenney/background-elements-remastered/PNG/Default/tree.png",
+        "/assets/packs/kenney/background-elements-remastered/PNG/Default/houseSmall1.png"
+      ],
+      "generatedElements": ["treehouse-platform", "window-light", "stars"]
+    },
+    "forest": {
+      "label": "森林",
+      "assets": [
+        "/assets/packs/kenney/background-elements-remastered/Backgrounds/backgroundForest.png",
+        "/assets/packs/kenney/background-elements-remastered/PNG/Default/treePine.png",
+        "/assets/packs/kenney/background-elements-remastered/PNG/Default/tree.png"
+      ],
+      "generatedElements": ["night-tint", "stars"]
+    },
+    "shore": {
+      "label": "海岸",
+      "assets": [
+        "/assets/packs/kenney/background-elements-remastered/Backgrounds/backgroundEmpty.png",
+        "/assets/packs/kenney/background-elements-remastered/PNG/Default/treePalm.png"
+      ],
+      "generatedElements": ["sea", "shore", "stars"]
+    }
+  },
+  "starMap": {
+    "planetImages": [
+      "/assets/packs/kenney/planets/Planets/planet00.png",
+      "/assets/packs/kenney/planets/Planets/planet01.png",
+      "/assets/packs/kenney/planets/Planets/planet02.png",
+      "/assets/packs/kenney/planets/Planets/planet03.png",
+      "/assets/packs/kenney/planets/Planets/planet04.png",
+      "/assets/packs/kenney/planets/Planets/planet05.png",
+      "/assets/packs/kenney/planets/Planets/planet06.png",
+      "/assets/packs/kenney/planets/Planets/planet07.png",
+      "/assets/packs/kenney/planets/Planets/planet08.png",
+      "/assets/packs/kenney/planets/Planets/planet09.png"
+    ],
+    "starIcon": "/assets/packs/kenney/ui-pack-adventure/PNG/Double/minimap_icon_star_yellow.png"
+  },
+  "postcardUi": {
+    "paperPanel": "/assets/packs/kenney/ui-pack-adventure/PNG/Double/panel_grid_paper.png",
+    "panel": "/assets/packs/kenney/ui-pack-adventure/PNG/Double/panel_brown.png",
+    "button": "/assets/packs/kenney/ui-pack-adventure/PNG/Double/button_brown.png",
+    "banner": "/assets/packs/kenney/ui-pack-adventure/PNG/Double/banner_hanging.png"
+  },
+  "suppliesAndSouvenirs": {
+    "categories": ["toy", "treat", "familiar-object"],
+    "spritesheet": "/assets/packs/kenney/generic-items/Spritesheet/genericItems_spritesheet_colored.png",
+    "atlas": "/assets/packs/kenney/generic-items/Spritesheet/genericItems_spritesheet_colored.xml",
+    "selectionNote": "Choose species-neutral item icons during MVP scene assembly; use Phaser-drawn symbols when no suitable pack item exists."
+  },
+  "petPortrait": {
+    "source": "player-uploaded-private-photo-in-profile-and-album",
+    "fallback": "paw-mark-drawn-with-Phaser"
+  }
+}

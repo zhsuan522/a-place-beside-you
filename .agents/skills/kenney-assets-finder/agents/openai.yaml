@@ -1,0 +1,3 @@
+interface:
+  display_name: "Kenney Asset Workflow"
+  short_description: "Find, download, and prepare Kenney packs for Phaser"
